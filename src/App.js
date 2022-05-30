@@ -12,17 +12,19 @@ const cx = classNames.bind(styles);
 function App() {
     return (
         <BrowserRouter>
-            <div className={cx('wrapper')}>
+            <div className={cx('wrapper', 'grid', 'wide')}>
                 <InfoHeader />
-                <div className={cx('content')}>
+                <div className={cx('content', 'row')}>
                     <Sidebar />
-                    <Routes>
-                        {publicRoutes.map((route, index) => {
-                            const Page = route.component;
+                    <div className={cx('content-body', 'col', 'l-10')}>
+                        <Routes>
+                            {publicRoutes.map((route, index) => {
+                                const Page = route.component;
 
-                            return <Route key={index} path={route.path} element={<Page></Page>}></Route>;
-                        })}
-                    </Routes>
+                                return <Route key={index} path={route.path} element={<Page></Page>}></Route>;
+                            })}
+                        </Routes>
+                    </div>
                 </div>
             </div>
         </BrowserRouter>
