@@ -1,12 +1,118 @@
 .info-header {
+    display: flex;
     height: 221px;
-    background: linear-gradient(to right bottom, rgba(207, 162, 162, 0.7), rgba(101, 178, 184, 0.3));
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
     padding: 30px;
-}
-
-.avatar {
-    height: 160px;
-    width: 160px;
     border-radius: var(--content-radius);
-    object-fit: cover;
+
+    .info-header_left {
+        display: flex;
+        flex-basis: 50%;
+        border-right: 1.5px solid #bcbcbc;
+
+        .avatar {
+            height: 160px;
+            width: 160px;
+            border-radius: var(--content-radius);
+            box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+            padding: 0 24px;
+
+            .name {
+                font-weight: bold;
+                font-size: 28px;
+            }
+
+            .description {
+                padding-top: 8px;
+            }
+
+            .contact {
+                margin-top: 45px;
+                text-align: center;
+
+                .contact-icon {
+                    position: relative;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 40px;
+                    background: white;
+                    color: var(--bgColor);
+                    display: inline-block;
+                    margin: 5px;
+                    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+                    cursor: pointer;
+                    transition: background-color 0.1s linear;
+                    font-size: 1.1em;
+
+                    &:hover {
+                        .icon_popup {
+                            display: block;
+                            animation: contact-icon-popup 0.25s 0.2s linear forwards;
+
+                            @keyframes contact-icon-popup {
+                                0% {
+                                    opacity: 0;
+                                    transform: translateX(-50%) translateY(0%);
+                                    top: 0;
+                                }
+                                60% {
+                                    opacity: 0.7;
+                                    transform: translateX(-50%) translateY(-100%);
+                                    top: -18px;
+                                }
+                                100% {
+                                    opacity: 1;
+                                    transform: translateX(-50%) translateY(-100%);
+                                    top: -12px;
+                                }
+                            }
+                        }
+                    }
+
+                    .icon_popup {
+                        position: absolute;
+                        left: 50%;
+                        top: -12px;
+                        border-radius: 12px;
+                        line-height: normal;
+                        padding: 4px 8px;
+                        background-color: var(--bgColor);
+                        color: #fff;
+                        font-size: 0.9em;
+                        font-weight: bold;
+                        transform: translateX(-50%) translateY(0%);
+                        opacity: 0;
+                        display: none;
+
+                        &::after {
+                            content: '';
+                            position: inherit;
+                            border: 5px solid transparent;
+                            border-top-color: var(--bgColor);
+                            bottom: 0;
+                            transform: translateY(calc(100% - 1px)) translateX(-50%);
+                            left: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .info-header_right {
+        flex-basis: 50%;
+        padding: 0 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
