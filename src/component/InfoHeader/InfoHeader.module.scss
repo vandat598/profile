@@ -56,7 +56,7 @@
                     &:hover {
                         .icon_popup {
                             display: block;
-                            animation: contact-icon-popup 0.25s 0.2s linear forwards;
+                            animation: contact-icon-popup 0.25s 0.05s linear forwards;
 
                             @keyframes contact-icon-popup {
                                 0% {
