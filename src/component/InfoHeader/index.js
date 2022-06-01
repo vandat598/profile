@@ -17,21 +17,21 @@ function InfoHeader() {
                         <FontAwesomeIcon icon={faGraduationCap} />
                         Tốt nghiệp Đại học Nha Trang
                     </div>
-                    <div className={cx('contact')}>
+                    <div className={cx('Social-network')}>
                         <a href="https://www.facebook.com/TVD598/" target="_blank" rel="noreferrer">
-                            <div className={cx('contact-icon')} style={{ '--bgColor': '#3B5998' }}>
+                            <div className={cx('SN-icon')} style={{ '--bgColor': '#3B5998' }}>
                                 <FontAwesomeIcon icon={faFacebookF} />
                                 <div className={cx('icon_popup')}>Facebook</div>
                             </div>
                         </a>
                         <a href="https://www.tiktok.com/@thewine99" target="_blank" rel="noreferrer">
-                            <div className={cx('contact-icon')} style={{ '--bgColor': '#333' }}>
+                            <div className={cx('SN-icon')} style={{ '--bgColor': '#333' }}>
                                 <FontAwesomeIcon icon={faTiktok} />
                                 <div className={cx('icon_popup')}>Tiktok</div>
                             </div>
                         </a>
                         <a href="https://github.com/vandat598?tab=repositories" target="_blank" rel="noreferrer">
-                            <div className={cx('contact-icon')} style={{ '--bgColor': '#903b98' }}>
+                            <div className={cx('SN-icon')} style={{ '--bgColor': '#903b98' }}>
                                 <FontAwesomeIcon icon={faGithub} />
                                 <div className={cx('icon_popup')}>Github</div>
                             </div>
@@ -41,7 +41,7 @@ function InfoHeader() {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <div className={cx('contact-icon')} style={{ '--bgColor': '#EA4335' }}>
+                            <div className={cx('SN-icon')} style={{ '--bgColor': '#EA4335' }}>
                                 <FontAwesomeIcon icon={faYoutube} />
                                 <div className={cx('icon_popup')}>Youtube</div>
                             </div>
@@ -49,7 +49,28 @@ function InfoHeader() {
                     </div>
                 </div>
             </div>
-            <div className={cx('info-header_right')}>alo</div>
+            <div className={cx('info-header_right')}>
+                <div className={cx('row')}>
+                    <div className={cx('contact', 'col', 'l-8')}>
+                        <div className={cx('title')}>NGÀY SINH</div>
+                        <p>05/09/1998</p>
+                    </div>
+                    <div className={cx('contact', 'col', 'l-4')}>
+                        <div className={cx('title')}>QUÊ QUÁN</div>
+                        <p>Khánh Hoà</p>
+                    </div>
+                </div>
+                <div className={cx('row')}>
+                    <div className={cx('contact', 'col', 'l-8')}>
+                        <div className={cx('title')}>EMAIL</div>
+                        <p>trandat5998@gmail.com</p>
+                    </div>
+                    <div className={cx('contact', 'col', 'l-4')}>
+                        <div className={cx('title')}>SỐ ĐIỆN THOẠI</div>
+                        <p>0966-883-859</p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
