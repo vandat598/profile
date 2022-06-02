@@ -6,6 +6,7 @@ import styles from './App.module.scss';
 import { publicRoutes } from '~/routes';
 import InfoHeader from './component/InfoHeader';
 import Sidebar from './component/Sidebar';
+import LayoutContent from './component/LayoutContent';
 
 const cx = classNames.bind(styles);
 
@@ -16,15 +17,16 @@ function App() {
                 <InfoHeader />
                 <div className={cx('content', 'row')}>
                     <Sidebar />
-                    <div className={cx('content-body', 'col', 'l-10')}>
+
+                    <LayoutContent>
                         <Routes>
                             {publicRoutes.map((route, index) => {
                                 const Page = route.component;
 
-                                return <Route key={index} path={route.path} element={<Page></Page>}></Route>;
+                                return <Route key={index} path={route.path} element={<Page />}></Route>;
                             })}
                         </Routes>
-                    </div>
+                    </LayoutContent>
                 </div>
             </div>
         </BrowserRouter>
