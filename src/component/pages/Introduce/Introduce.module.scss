@@ -1,0 +1,79 @@
+@import '../../GlobalStyles/grid-library.scss';
+
+.sub-item {
+    .title_level1 {
+        padding-bottom: 4px;
+        margin-bottom: 24px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: 10%;
+            background: linear-gradient(90deg, #ff0000, #fff200, #1e9600);
+            left: 0;
+            bottom: 0;
+            border-radius: 8px;
+        }
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    p + p {
+        margin-top: 8px;
+    }
+
+    .title_level1,
+    .title_level2 {
+        position: relative;
+    }
+
+    .title_level2 {
+        margin-bottom: 20px;
+        padding-bottom: 8px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: 10%;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, #ff0000, #fff200, #1e9600);
+            border-radius: 8px;
+        }
+    }
+
+    .otherProject {
+        text-align: center;
+        padding: 12px 35px;
+
+        h3 {
+            margin: 8px 0;
+        }
+
+        .imageProject {
+            border-radius: var(--contain-radius);
+            overflow: hidden;
+            box-shadow: rgb(9 30 66 / 25%) 0px 4px 8px -2px, rgb(9 30 66 / 8%) 0px 0px 0px 1px;
+
+            img {
+                width: 100%;
+                display: block;
+                transition: transform 0.3s linear;
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.sub-item + .sub-item {
+    margin-top: 24px;
+}
