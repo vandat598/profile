@@ -1,6 +1,7 @@
 import Lottie from 'react-lottie';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
+import { useState } from 'react';
 
 import styles from './Sidebar.module.scss';
 import animationData from '~/assets/animations/test.json';
@@ -8,9 +9,23 @@ import animationData from '~/assets/animations/test.json';
 const cx = classNames.bind(styles);
 
 function Sidebar() {
+    const [fixed, setFixed] = useState(false);
+    // const [active, setActive] = useState(true);
+
+    const srollToFixedNav = () => {
+        if (window.scrollY > 300) {
+            setFixed(true);
+        } else {
+            setFixed(false);
+        }
+    };
+    window.addEventListener('scroll', srollToFixedNav);
+
+    // useRef
+
     return (
         <div className={cx('sidebar', 'col', 'l-2', 'm-12', 's-12')}>
-            <ul className={cx('nav')}>
+            <ul className={fixed ? cx('nav', 'fixed') : cx('nav')}>
                 <Link to="/" className={cx('link')}>
                     <li className={cx('nav-item', 'active')}>
                         <Lottie options={{ animationData: animationData }} height={40} width={40} />

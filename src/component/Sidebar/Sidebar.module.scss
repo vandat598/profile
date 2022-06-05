@@ -2,15 +2,8 @@
 
 .sidebar {
     .nav {
-        .fixed {
-            position: fixed;
-            top: 24px;
-            animation: nav-fixed 0.4s;
-        }
-
         margin-bottom: 50px;
         border-radius: var(--contain-radius);
-        padding: 30px;
         background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
 
         display: flex;
@@ -18,17 +11,9 @@
         justify-content: space-evenly;
         align-items: center;
         list-style-type: none;
+        min-width: 180px;
         padding: 16px;
         transition: all 2s ease-in 3s;
-
-        @keyframes nav-fixed {
-            0% {
-                top: 0;
-            }
-            100% {
-                top: 24px;
-            }
-        }
 
         .link {
             text-decoration: none;
@@ -56,6 +41,20 @@
 
         .active {
             background: linear-gradient(135deg, rgb(224, 37, 199), rgb(255, 188, 246), rgb(255, 212, 249));
+        }
+    }
+
+    .fixed {
+        position: fixed;
+        top: 24px;
+        animation: nav-fixed 0.4s;
+    }
+    @keyframes nav-fixed {
+        from {
+            top: 0;
+        }
+        to {
+            top: 24px;
         }
     }
 }

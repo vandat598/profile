@@ -14,8 +14,14 @@ function InfoHeader() {
                 <div className={cx('content')}>
                     <div className={cx('name')}>Trần Văn Đạt</div>
                     <div className={cx('description')}>
-                        <FontAwesomeIcon icon={faGraduationCap} />
-                        Tốt nghiệp Đại học Nha Trang
+                        <p>
+                            <FontAwesomeIcon icon={faGraduationCap} />
+                            <em className={cx('text_em')}>Tốt nghiệp Đại học Nha Trang</em>
+                        </p>
+                        <p>
+                            <FontAwesomeIcon icon={faGraduationCap} />
+                            <em className={cx('text_em')}>Chuyên ngành Công nghệ kỹ thuật nhiệt</em>
+                        </p>
                     </div>
                     <div className={cx('Social-network')}>
                         <a href="https://www.facebook.com/TVD598/" target="_blank" rel="noreferrer">

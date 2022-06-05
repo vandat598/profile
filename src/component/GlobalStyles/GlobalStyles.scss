@@ -8,6 +8,20 @@
 
 :root {
     --contain-radius: 24px;
+    --gradient_color: linear-gradient(
+        45deg,
+        #f9f871,
+        #ffc75f,
+        #ff9671,
+        #ff6f91,
+        #d65db1,
+        #845ec2,
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+    );
 }
 
 body {
