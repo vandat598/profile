@@ -7,12 +7,14 @@ import { publicRoutes } from '~/routes';
 import InfoHeader from './component/InfoHeader';
 import Sidebar from './component/Sidebar';
 import LayoutContent from './component/LayoutContent';
+import ScrollToTop from './component/Sidebar/ScrollToTop.js';
 
 const cx = classNames.bind(styles);
 
 function App() {
     return (
         <BrowserRouter>
+            <ScrollToTop />
             <div className={cx('wrapper', 'grid', 'wide')}>
                 <InfoHeader />
                 <div className={cx('content', 'row')}>
