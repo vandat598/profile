@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 import styles from './Sidebar.module.scss';
 import { MenuItems } from './MenuItems.js';
@@ -8,11 +8,13 @@ import { MenuItems } from './MenuItems.js';
 const cx = classNames.bind(styles);
 
 function Sidebar() {
+    const contentSection = useRef();
+
     const [fixed, setFixed] = useState(false);
-    const [active, setActive] = useState(cx('nav-item'));
+    // const [active, setActive] = useState(cx('nav-item'));
 
     const srollToFixedNav = () => {
-        if (window.scrollY > 300) {
+        if (window.scrollY >= contentSection.current.offsetTop) {
             setFixed(true);
         } else {
             setFixed(false);
@@ -20,30 +22,37 @@ function Sidebar() {
     };
     window.addEventListener('scroll', srollToFixedNav);
 
-    const toggleActive = (navItem, index) => {
-        // logic
+    // const toggleActive = () => {
+    //     // logic
+    // };
+
+    const scrollToSection = () => {
+        window.scrollTo({
+            top: contentSection.current.offsetTop,
+            behavior: 'smooth',
+        });
     };
 
     return (
-        <nav className={cx('sidebar', 'col', 'l-2', 'm-12', 's-12')}>
+        <nav ref={contentSection} className={cx('sidebar', 'col', 'l-2', 'm-12', 's-12')}>
             <ul className={fixed ? cx('nav', 'fixed') : cx('nav')}>
                 {MenuItems.map((navItem, index) => {
                     return (
-                        <Link key={index} to={navItem.url} className={cx('link')}>
-                            <li
-                                className={active}
-                                onClick={() => {
-                                    toggleActive(navItem, index);
-                                }}
-                            >
+                        <NavLink
+                            // exact
+                            key={index}
+                            to={navItem.url}
+                            className={({ isActive }) => (isActive ? cx('link', 'active') : cx('link'))}
+                        >
+                            <li className={cx('nav-item')} onClick={scrollToSection}>
                                 <lord-icon
-                                    src="https://cdn.lordicon.com/dklbhvrt.json"
-                                    trigger="loop-on-hover"
+                                    src={navItem.iconSrc}
+                                    trigger="hover"
                                     style={{ width: '50px', height: '50px' }}
                                 ></lord-icon>
                                 <div className={cx('title')}>{navItem.title}</div>
                             </li>
-                        </Link>
+                        </NavLink>
                     );
                 })}
 
