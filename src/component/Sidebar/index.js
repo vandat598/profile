@@ -1,4 +1,4 @@
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import { useState, useRef } from 'react';
 
@@ -11,7 +11,6 @@ function Sidebar() {
     const contentSection = useRef();
 
     const [fixed, setFixed] = useState(false);
-    // const [active, setActive] = useState(cx('nav-item'));
 
     const srollToFixedNav = () => {
         if (window.scrollY >= contentSection.current.offsetTop) {
@@ -21,10 +20,6 @@ function Sidebar() {
         }
     };
     window.addEventListener('scroll', srollToFixedNav);
-
-    // const toggleActive = () => {
-    //     // logic
-    // };
 
     const scrollToSection = () => {
         window.scrollTo({

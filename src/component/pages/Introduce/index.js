@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './Introduce.module.scss';
 
-import theBand from '~/assets/images/theBand.png';
+import { otherProjects } from './OtherProject';
 
 const cx = classNames.bind(styles);
 
@@ -31,46 +31,20 @@ function Introduce() {
                     <h2>Sản phẩm của bản thân</h2>
                 </div>
                 <div className={cx('row')}>
-                    <div className={cx('col', 'l-6')}>
-                        <div className={cx('otherProject')}>
-                            <a href="https://info.nghiane.cf/products/the-band/">
-                                <div className={cx('imageProject')}>
-                                    <img src={theBand} alt="The Band" />
+                    {otherProjects.map((otherProject, index) => {
+                        return (
+                            <div key={index} className={cx('col', 'l-6')}>
+                                <div className={cx('otherProject')}>
+                                    <a href={otherProject.url}>
+                                        <div className={cx('imageProject')}>
+                                            <img src={otherProject.image} alt={otherProject.alt} />
+                                        </div>
+                                    </a>
+                                    <h3>{otherProject.title}</h3>
                                 </div>
-                            </a>
-                            <h3>The band</h3>
-                        </div>
-                    </div>
-                    <div className={cx('col', 'l-6')}>
-                        <div className={cx('otherProject')}>
-                            <a href="https://info.nghiane.cf/products/the-band/">
-                                <div className={cx('imageProject')}>
-                                    <img src={theBand} alt="The Band" />
-                                </div>
-                            </a>
-                            <h3>Music Player</h3>
-                        </div>
-                    </div>
-                    <div className={cx('col', 'l-6')}>
-                        <div className={cx('otherProject')}>
-                            <a href="https://info.nghiane.cf/products/the-band/">
-                                <div className={cx('imageProject')}>
-                                    <img src={theBand} alt="The Band" />
-                                </div>
-                            </a>
-                            <h3>Shopee</h3>
-                        </div>
-                    </div>
-                    <div className={cx('col', 'l-6')}>
-                        <div className={cx('otherProject')}>
-                            <a href="https://info.nghiane.cf/products/the-band/">
-                                <div className={cx('imageProject')}>
-                                    <img src={theBand} alt="The Band" />
-                                </div>
-                            </a>
-                            <h3>Tiktok</h3>
-                        </div>
-                    </div>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
             <div className={cx('sub-item')}></div>
