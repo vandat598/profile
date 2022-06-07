@@ -6,10 +6,10 @@ import Interests from '~/component/pages/Interests';
 
 // Public Route
 const publicRoutes = [
-    { path: '/profile/', component: Introduce },
-    { path: '/profile/education', component: Education },
-    { path: '/profile/target', component: Target },
-    { path: '/profile/interests', component: Interests },
+    { path: '/', component: Introduce },
+    { path: '/education', component: Education },
+    { path: '/target', component: Target },
+    { path: '/interests', component: Interests },
 ];
 
 // Private Routes Dùng khi đăng nhập thành công

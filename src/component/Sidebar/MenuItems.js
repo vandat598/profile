@@ -2,25 +2,25 @@ export const MenuItems = [
     {
         id: 1,
         title: 'Bản Thân',
-        url: '/profile/',
+        url: '/',
         iconSrc: 'https://cdn.lordicon.com/dxjqoygy.json',
     },
     {
         id: 2,
         title: 'Học Vấn',
-        url: '/profile/education',
+        url: '/education',
         iconSrc: 'https://cdn.lordicon.com/wxnxiano.json',
     },
     {
         id: 3,
         title: 'Mục tiêu',
-        url: '/profile/target',
+        url: '/target',
         iconSrc: 'https://cdn.lordicon.com/hpxruznz.json',
     },
     {
         id: 4,
         title: 'Sở thích',
-        url: '/profile/interests',
+        url: '/interests',
         iconSrc: 'https://cdn.lordicon.com/rjzlnunf.json',
     },
 ];

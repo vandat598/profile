@@ -34,9 +34,8 @@ function Sidebar() {
                 {MenuItems.map((navItem, index) => {
                     return (
                         <NavLink
-                            // exact
                             key={index}
-                            to={navItem.url}
+                            to={`/profile${navItem.url}`}
                             className={({ isActive }) => (isActive ? cx('link', 'active') : cx('link'))}
                         >
                             <li className={cx('nav-item')} onClick={scrollToSection}>
