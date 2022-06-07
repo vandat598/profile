@@ -5,13 +5,13 @@ import tiktok from '~/assets/images/Tiktok.png';
 
 export const otherProjects = [
     {
-        url: 'https://info.nghiane.cf/products/the-band/',
+        url: 'https://vandat598.github.io/theband/',
         image: theBand,
         alt: 'The Band',
         title: 'The Band',
     },
     {
-        url: 'https://info.nghiane.cf/products/the-band/',
+        url: 'https://vandat598.github.io/musicPlayer/',
         image: musicPlayer,
         alt: 'Music Player',
         title: 'Music Player',
