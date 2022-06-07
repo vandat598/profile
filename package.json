@@ -1,6 +1,7 @@
 {
     "name": "profile",
     "version": "0.1.0",
+    "homepage": "https://vandat598.github.io/profile/",
     "private": true,
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -31,7 +32,7 @@
         "build": "react-app-rewired build",
         "test": "react-app-rewired test",
         "eject": "react-app-rewired eject",
-        "predeploy": "react-app-rewired build",
+        "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
