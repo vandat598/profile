@@ -13,7 +13,7 @@ function Sidebar() {
     const [fixed, setFixed] = useState(false);
 
     const srollToFixedNav = () => {
-        if (window.scrollY >= contentSection.current.offsetTop) {
+        if (window.scrollY >= 280) {
             setFixed(true);
         } else {
             setFixed(false);
@@ -49,31 +49,6 @@ function Sidebar() {
                         </NavLink>
                     );
                 })}
-
-                {/* <Link to="/" className={cx('link')}>
-                    <li className={cx('nav-item', 'active')}>
-                        <Lottie options={{ animationData: animationData }} height={40} width={40} />
-                        <div className={cx('title')}>BẢN THÂN</div>
-                    </li>
-                </Link>
-                <Link to="/education" className={cx('link')}>
-                    <li className={cx('nav-item')} onClick={() => {}}>
-                        <Lottie options={{ animationData: animationData }} height={40} width={40} />
-                        <div className={cx('title')}>HỌC VẤN</div>
-                    </li>
-                </Link>
-                <Link to="/target" className={cx('link')}>
-                    <li className={cx('nav-item')}>
-                        <Lottie options={{ animationData: animationData }} height={40} width={40} />
-                        <div className={cx('title')}>MỤC TIÊU</div>
-                    </li>
-                </Link>
-                <Link to="/interests" className={cx('link')}>
-                    <li className={cx('nav-item')}>
-                        <Lottie options={{ animationData: animationData }} height={40} width={40} />
-                        <div className={cx('title')}>SỞ THÍCH</div>
-                    </li>
-                </Link> */}
             </ul>
         </nav>
     );

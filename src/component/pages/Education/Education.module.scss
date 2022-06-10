@@ -1,0 +1,25 @@
+@import '../../GlobalStyles/grid-library.scss';
+
+.title_level1 {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 10%;
+        left: 0;
+        bottom: 0;
+        border-radius: 8px;
+        background: var(--gradient_color);
+        background-position: left;
+        background-size: 50%;
+        animation: ledRGB 3s linear infinite;
+    }
+
+    @keyframes ledRGB {
+        100% {
+            background-position: right;
+        }
+    }
+}

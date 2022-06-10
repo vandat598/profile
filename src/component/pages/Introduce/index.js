@@ -1,29 +1,32 @@
 import classNames from 'classnames/bind';
 import styles from './Introduce.module.scss';
+import { useState } from 'react';
+import PopupProject from './PopupProject';
 
 import { otherProjects } from './OtherProject';
 
 const cx = classNames.bind(styles);
 
 function Introduce() {
+    const [open, setOpen] = useState(false);
+
     return (
         <div className={cx('wrapper')}>
             <div className={cx('sub-item')}>
                 <h1 className={cx('title_level1')}>Giới thiệu</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cum hic esse eaque perspiciatis
-                    veritatis cumque minima aut molestias illo. Ullam corrupti reprehenderit expedita molestiae, magnam
-                    esse assumenda totam sequi!
+                    Tôi tên Đạt, Từng học tại trường Đại Học Nha Trang, tốt nghiệp chuyên ngành Công Nghệ Kỹ Thuật Nhiệt
+                    vào cuối năm 2020.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid quas labore mollitia
-                    accusantium. Unde incidunt adipisci, illo quas repudiandae saepe nesciunt tenetur porro minus,
-                    itaque asperiores sint cupiditate voluptates!
+                    Lúc còn là sinh viên, những môn về lập trình hệ thống tự động hoá, đã truyền cảm hứng cho tôi về
+                    ngành lập trình. Sau 2 năm ra trường, đi làm tại các công trình, phân xưởng. Tôi quyết định thử học
+                    lập trình web và vô tính tìm được trang https://fullstack.edu.vn/. Tôi cảm thấy mình thật sự muốn
+                    theo đuổi Lập trình.
                 </p>
                 <p style={{ color: '#9D0000' }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quos libero, porro qui illo nisi nulla
-                    cumque iusto repellendus, ratione aspernatur id debitis explicabo itaque velit est laborum quas
-                    iste.
+                    Tôi mong muốn theo làm hướng <strong>Front-end Web Developer</strong>, và ứng tuyển vào vị trí{' '}
+                    <strong>Intern</strong>. Mong muốn được trải nghiệm các dự án thực tế để có thêm kinh nghiệm.
                 </p>
             </div>
             <div className={cx('sub-item')}>
@@ -34,12 +37,17 @@ function Introduce() {
                     {otherProjects.map((otherProject, index) => {
                         return (
                             <div key={index} className={cx('col', 'l-6')}>
-                                <div className={cx('otherProject')}>
-                                    <a href={otherProject.url}>
-                                        <div className={cx('imageProject')}>
-                                            <img src={otherProject.image} alt={otherProject.alt} />
-                                        </div>
-                                    </a>
+                                <div
+                                    className={cx('otherProject')}
+                                    onClick={() => {
+                                        setOpen(true);
+                                    }}
+                                >
+                                    {/* <a href={otherProject.url}> */}
+                                    <div className={cx('imageProject')}>
+                                        <img src={otherProject.image} alt={otherProject.alt} />
+                                    </div>
+                                    {/* </a> */}
                                     <h3>{otherProject.title}</h3>
                                 </div>
                             </div>
@@ -47,7 +55,7 @@ function Introduce() {
                     })}
                 </div>
             </div>
-            <div className={cx('sub-item')}></div>
+            <PopupProject value={{ open, setOpen }} />
         </div>
     );
 }

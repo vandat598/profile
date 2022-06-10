@@ -81,7 +81,7 @@
 
     .fixed {
         position: fixed;
-        top: 24px;
+        top: 70px;
         animation: nav-fixed 0.4s;
     }
     @keyframes nav-fixed {
@@ -89,7 +89,7 @@
             top: 0;
         }
         to {
-            top: 24px;
+            top: 70px;
         }
     }
 }

@@ -1,6 +1,7 @@
 // Import Libraries
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import classNames from 'classnames/bind';
+import 'bootstrap';
 // Import from WorkSpace
 import styles from './App.module.scss';
 import { publicRoutes } from '~/routes';
