@@ -93,3 +93,28 @@
         }
     }
 }
+
+@media (max-width: 739px) {
+    .sidebar {
+        .nav {
+            position: fixed;
+            flex-direction: row;
+            z-index: 999;
+            height: 10vh;
+            width: 100%;
+            top: 90vh;
+            bottom: 0;
+            margin-bottom: 0;
+
+            .nav-item {
+                position: relative;
+                width: 100px;
+                padding: 0;
+                margin: 0;
+            }
+        }
+        .fixed {
+            animation: none;
+        }
+    }
+}

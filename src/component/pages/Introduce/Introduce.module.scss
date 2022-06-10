@@ -4,14 +4,16 @@
     .title_level1 {
         padding-bottom: 4px;
         margin-bottom: 24px;
+        text-shadow: rgb(0 0 0 / 25%) 4px 3px 2px;
 
         &::after {
             content: '';
             position: absolute;
             height: 4px;
-            width: 10%;
+            box-shadow: rgb(0 0 0 / 25%) 8px 5px 5px;
+            width: 100%;
             left: 0;
-            bottom: 0;
+            bottom: -4px;
             border-radius: 8px;
             background: var(--gradient_color);
             background-position: left;
@@ -40,15 +42,12 @@
         &::after {
             content: '';
             position: absolute;
-            height: 4px;
-            width: 10%;
-            left: 0;
-            bottom: 0;
+            height: 2px;
+            width: 32%;
+            left: 16px;
+            bottom: 4px;
             border-radius: 8px;
-            background: var(--gradient_color);
-            background-position: left;
-            background-size: 50%;
-            animation: ledRGB 3s linear infinite;
+            background: rgb(175, 175, 175);
         }
     }
 

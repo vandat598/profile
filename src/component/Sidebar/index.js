@@ -29,7 +29,7 @@ function Sidebar() {
     };
 
     return (
-        <nav ref={contentSection} className={cx('sidebar', 'col', 'l-2', 'm-12', 's-12')}>
+        <nav ref={contentSection} className={cx('sidebar', 'col', 'l-2', 'm-12', 'c-12')}>
             <ul className={fixed ? cx('nav', 'fixed') : cx('nav')}>
                 {MenuItems.map((navItem, index) => {
                     return (

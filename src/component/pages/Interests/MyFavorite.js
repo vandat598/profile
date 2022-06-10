@@ -1,7 +1,7 @@
 // movies
-import chienLang from '~/assets/images/PorterMovie/chienLang.jpg';
-import ironMan from '~/assets/images/PorterMovie/ironman.png';
-import fastFurious from '~/assets/images/PorterMovie/fastFurious.png';
+import chienLang from '~/assets/images/Movies/chienLang.jpg';
+import ironMan from '~/assets/images/Movies/ironman.png';
+import fastFurious from '~/assets/images/Movies/fastFurious.png';
 // books
 import tonyCoffee from '~/assets/images/Books/coffeeTony.png';
 import Sherlock from '~/assets/images/Books/Sherlock.png';

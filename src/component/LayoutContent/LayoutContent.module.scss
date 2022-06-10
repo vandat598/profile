@@ -1,10 +1,15 @@
 @import '../GlobalStyles/grid-library.scss';
 
 .content-body {
-    height: 200vh;
     margin-bottom: 50px;
     border-radius: var(--contain-radius);
     padding: 30px;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
     transition: all 0.5s;
+}
+
+@media (max-width: 739px) {
+    .content-body {
+        margin-bottom: calc(10vh + 10px);
+    }
 }

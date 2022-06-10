@@ -1,25 +1,145 @@
 @import '../../GlobalStyles/grid-library.scss';
 
-.title_level1 {
+.title_level1,
+.title_level2 {
     position: relative;
+    padding-bottom: 4px;
+    margin-bottom: 24px;
+}
+
+.title_level1 {
+    text-shadow: rgb(0 0 0 / 25%) 4px 3px 2px;
+
+    h1 {
+        &::after {
+            content: '';
+            position: absolute;
+            height: 4px;
+            box-shadow: rgb(0 0 0 / 25%) 8px 5px 5px;
+            width: 100%;
+            left: 0;
+            bottom: 4px;
+            border-radius: 8px;
+            background: var(--gradient_color);
+            background-position: left;
+            background-size: 50%;
+            animation: ledRGB 3s linear infinite;
+        }
+
+        @keyframes ledRGB {
+            100% {
+                background-position: right;
+            }
+        }
+    }
+
+    h1 {
+        &::after {
+            content: '';
+            position: absolute;
+            height: 4px;
+            box-shadow: rgb(0 0 0 / 25%) 8px 5px 5px;
+            width: 100%;
+            left: 0;
+            bottom: 4px;
+            border-radius: 8px;
+            background: var(--gradient_color);
+            background-position: left;
+            background-size: 50%;
+            animation: ledRGB 3s linear infinite;
+        }
+
+        @keyframes ledRGB {
+            100% {
+                background-position: right;
+            }
+        }
+    }
+}
+
+.title_level2 {
+    display: flex;
+    align-items: center;
+    line-height: 28px;
+    margin-bottom: 28px;
 
     &::after {
         content: '';
         position: absolute;
-        height: 4px;
-        width: 10%;
-        left: 0;
-        bottom: 0;
+        height: 2px;
+        width: 14%;
+        left: 16px;
+        bottom: 4px;
         border-radius: 8px;
-        background: var(--gradient_color);
-        background-position: left;
-        background-size: 50%;
-        animation: ledRGB 3s linear infinite;
+        background: rgb(175, 175, 175);
     }
 
-    @keyframes ledRGB {
-        100% {
-            background-position: right;
+    .icon_title {
+        display: block;
+        position: relative;
+        bottom: 4px;
+        color: #2d7df5;
+        width: 30px;
+        height: 30px;
+        margin-right: 6px;
+    }
+}
+
+.container {
+    padding-left: 16px;
+    padding-bottom: 28px;
+    border-left: 1px dashed #aaa;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        transform: translateX(-55%);
+        background: #304cfd;
+    }
+
+    &::before {
+        transform: translateX(-55%) scale(1.5);
+        background: #94b1f0;
+        animation: timeline-dot 3s infinite;
+    }
+
+    @keyframes timeline-dot {
+        0% {
+            transform: translateX(-55%) scale(1.2);
         }
+        45% {
+            transform: translateX(-55%) scale(1.7);
+        }
+        60% {
+            transform: translateX(-55%) scale(1.9);
+        }
+        100% {
+            transform: translateX(-55%) scale(1.2);
+        }
+    }
+
+    .title {
+        transform: translateY(-10px);
+        > img {
+            transform: translateY(-3px);
+            width: 30px;
+            border-radius: 100%;
+            margin-right: 4px;
+        }
+    }
+    .note {
+        color: rgb(112, 112, 112);
+        padding-bottom: 8px;
+        margin-top: -20px;
+    }
+    p {
+        text-align: justify;
     }
 }

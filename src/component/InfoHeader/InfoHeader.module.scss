@@ -29,10 +29,10 @@
             .name {
                 font-weight: bold;
                 font-size: 28px;
+                text-shadow: rgb(0 0 0 / 20%) 2px 3px 5px;
             }
 
             .description {
-                padding-top: 8px;
                 p {
                     .text_em {
                         margin-left: 8px;
@@ -42,7 +42,7 @@
             }
 
             .Social-network {
-                margin-top: 16px;
+                margin-bottom: 20px;
                 text-align: center;
 
                 .SN-icon {
@@ -133,6 +133,18 @@
                 font-size: 0.9em;
                 padding-bottom: 4px;
             }
+        }
+    }
+}
+
+@media (max-width: 739px) {
+    .info-header {
+        flex-direction: column;
+        height: auto;
+
+        .info-header_left {
+            flex-direction: column;
+            align-items: center;
         }
     }
 }

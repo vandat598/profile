@@ -57,21 +57,21 @@ function InfoHeader() {
             </div>
             <div className={cx('info-header_right')}>
                 <div className={cx('row')}>
-                    <div className={cx('contact', 'col', 'l-8')}>
+                    <div className={cx('contact', 'col', 'l-8', 'm-8', 'c-12')}>
                         <div className={cx('title')}>NGÀY SINH</div>
                         <p>05/09/1998</p>
                     </div>
-                    <div className={cx('contact', 'col', 'l-4')}>
+                    <div className={cx('contact', 'col', 'l-4', 'm-8', 'c-12')}>
                         <div className={cx('title')}>QUÊ QUÁN</div>
                         <p>Khánh Hoà</p>
                     </div>
                 </div>
                 <div className={cx('row')}>
-                    <div className={cx('contact', 'col', 'l-8')}>
+                    <div className={cx('contact', 'col', 'l-8', 'm-8', 'c-12')}>
                         <div className={cx('title')}>EMAIL</div>
                         <p>trandat5998@gmail.com</p>
                     </div>
-                    <div className={cx('contact', 'col', 'l-4')}>
+                    <div className={cx('contact', 'col', 'l-4', 'm-8', 'c-12')}>
                         <div className={cx('title')}>SỐ ĐIỆN THOẠI</div>
                         <p>0966-883-859</p>
                     </div>
