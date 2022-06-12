@@ -1,11 +1,11 @@
-import html from '~/assets/images/LogoCourses/html.png'
-import CSS from '~/assets/images/LogoCourses/CSS.png'
-import SCSS from '~/assets/images/LogoCourses/SCSS.png'
-import JS from '~/assets/images/LogoCourses/JS.png'
-import react from '~/assets/images/LogoCourses/react.png'
-import Bootstrap from '~/assets/images/LogoCourses/Bootstrap.png'
-import git from '~/assets/images/LogoCourses/git.png'
-import github from '~/assets/images/LogoCourses/github.png'
+import html from '~/assets/images/LogoCourses/html.png';
+import CSS from '~/assets/images/LogoCourses/CSS.png';
+import SCSS from '~/assets/images/LogoCourses/SCSS.png';
+import JS from '~/assets/images/LogoCourses/JS.png';
+import react from '~/assets/images/LogoCourses/react.png';
+import Bootstrap from '~/assets/images/LogoCourses/Bootstrap.png';
+import git from '~/assets/images/LogoCourses/git.png';
+import github from '~/assets/images/LogoCourses/github.png';
 
 export const mySkills = [
     {
@@ -25,8 +25,9 @@ export const mySkills = [
     {
         logo: SCSS,
         title: 'SCSS',
-        note: 'JavaScript',
-        description: 'ReactJS',
+        note: 'Syntactically Awesome StyleSheets',
+        description:
+            'SCSS là một CSS Preprocessor giúp bạn viết CSS nhanh hơn và có cấu trúc rõ ràng hơn. Với SASS, bạn có thể viết CSS theo thứ tự rõ ràng, quản lý các biến đã được định nghĩa sẵn, các class dùng chung hay có thể tự động nén tập tin CSS lại để bạn tiết kiệm dung lượng.',
     },
     {
         logo: JS,
@@ -38,25 +39,29 @@ export const mySkills = [
     {
         logo: react,
         title: 'ReactJS',
-        note: 'ReactJS',
-        description: 'ReactJS',
+        note: 'React (JavaScript library)',
+        description:
+            'ReactJS là một thư viện JavaScript front-end mã nguồn mở và miễn phí, xây dựng giao diện người dùng dựa trên các thành phần UI. Nó được phát triển bởi Meta (trước đây là Facebook) ra mắt vào năm 2013.',
     },
     {
         logo: Bootstrap,
         title: 'Bootstrap',
-        note: 'Bootstrap',
-        description: 'Bootstrap',
+        note: 'Bootstrap (front-end framework)',
+        description:
+            'Bootstrap là một framework CSS mã nguồn mở và miễn phí hướng đến việc phát triển web responsive. Nó chứa các mẫu thiết kế dựa trên HTML, CSS và (tùy chọn) JavaScript cho kiểu chữ, biểu mẫu, nút, điều hướng và các thành phần giao diện khác.',
     },
     {
         logo: git,
         title: 'Git',
-        note: 'Git',
-        description: 'Git',
+        note: 'Git (ra đời vào năm 2005)',
+        description:
+            'Git là một hệ thống quản lý phiên bản phân tán (distributed version control system). Nhờ Git, việc quản lý code và làm việc nhóm của developer trở nên đơn giản, thuận tiện hơn.',
     },
     {
         logo: github,
         title: 'Github',
-        note: 'Github',
-        description: 'Github',
+        note: 'Github.com',
+        description:
+            'GitHub là một hệ thống quản lý dự án và phiên bản code, GitHub được coi giống như một mạng xã hội dành riêng cho các lập trình viên. Với GitHub, các lập trình viên có thể clone lại mã nguồn từ một repository. Nó cũng là một dịch vụ máy chủ repository giúp lưu trữ code và mỗi người có thể tạo tài khoản trên đó để tạo ra các kho chứa của riêng mình để làm việc.',
     },
 ];

@@ -100,6 +100,29 @@ function PopupProject({ value }) {
                             <h3>
                                 <span>details</span>
                             </h3>
+                            <div className={cx('details_content')}>
+                                <ul>
+                                    <li>
+                                        <span> HTML, CSS</span>
+                                    </li>
+                                    <li>
+                                        Made by:
+                                        <span> HTML, CSS</span>
+                                    </li>
+                                    <li>
+                                        Sử dụng:
+                                        <span> HTML, CSS</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button
+                                className={cx('access')}
+                                onClick={() => {
+                                    console.log('truy cap');
+                                }}
+                            >
+                                Truy cập
+                            </button>
                         </div>
                         <button
                             className={cx('close-btn')}

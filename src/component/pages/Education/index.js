@@ -21,7 +21,8 @@ function Education() {
                 <div className={cx('container')}>
                     <h4 className={cx('title')}>Trường Đại Học Nha Trang</h4>
                     <div className={cx('note')}>2016-2020</div>
-                    <p>Làm Trái ngành, tay ngang</p>
+                    <p>Chuyên ngành: Công nghệ kỹ thuật nhiệt</p>
+                    <p>Tốt nghiệp vào cuối năm 2020, từng đi làm tại các công trình xây dựng.</p>
                 </div>
                 <div className={cx('container')}>
                     <h4 className={cx('title')}>Học tại F8</h4>

@@ -5,22 +5,19 @@
 }
 
 .modal {
+    color: #fff;
     display: flex;
     background-color: #252525;
-    align-items: flex-start;
     border-radius: 30px;
-    justify-content: space-between;
     max-width: 1200px;
     padding: 30px;
     height: 61vh;
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
     position: fixed;
-    top: 10%;
+    top: 15%;
     left: 10%;
     right: 10%;
     bottom: 10%;
-    animation: floatDown 0.5s ease;
+    animation: floatDown 0.3s ease;
 
     .modal_inner {
         align-items: center;
@@ -65,9 +62,6 @@
         }
     }
 
-    .gallery {
-    }
-
     .close-btn {
         display: flex;
         align-items: center;
@@ -94,6 +88,7 @@
         }
         100% {
             opacity: 1;
+            top: 16%;
         }
     }
 }
