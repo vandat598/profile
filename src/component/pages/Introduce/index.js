@@ -1,11 +1,13 @@
 import classNames from 'classnames/bind';
 import styles from './Introduce.module.scss';
 import { useState } from 'react';
-import PopupProject from './PopupProject';
 
+import PopupProject from './PopupProject';
 import { otherProjects } from './OtherProject';
 
 const cx = classNames.bind(styles);
+
+const bodyScroll = document.querySelector('body');
 
 function Introduce() {
     const [open, setOpen] = useState(false);
@@ -37,14 +39,15 @@ function Introduce() {
                     {otherProjects.map((otherProject, index) => {
                         return (
                             <div key={index} className={cx('col', 'l-6')}>
-                                <div
-                                    className={cx('otherProject')}
-                                    onClick={() => {
-                                        setOpen(true);
-                                    }}
-                                >
+                                <div className={cx('otherProject')}>
                                     {/* <a href={otherProject.url}> */}
-                                    <div className={cx('imageProject')}>
+                                    <div
+                                        className={cx('imageProject')}
+                                        onClick={() => {
+                                            setOpen(true);
+                                            bodyScroll.classList.add('no-scroll');
+                                        }}
+                                    >
                                         <img src={otherProject.image} alt={otherProject.alt} />
                                     </div>
                                     {/* </a> */}
@@ -55,7 +58,8 @@ function Introduce() {
                     })}
                 </div>
             </div>
-            <PopupProject value={{ open, setOpen }} />
+
+            <PopupProject value={{ open, setOpen, bodyScroll }} />
         </div>
     );
 }

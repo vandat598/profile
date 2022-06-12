@@ -1,0 +1,107 @@
+.wrapper_modal {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.modal {
+    display: flex;
+    background-color: #252525;
+    align-items: flex-start;
+    border-radius: 30px;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 30px;
+    height: 61vh;
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    animation: floatDown 0.5s ease;
+
+    .modal_inner {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 50vh;
+        width: 100%;
+        padding: 15px 15px;
+        position: relative;
+    }
+
+    .modal_content {
+        display: flex;
+    }
+
+    .demo,
+    .details {
+        flex-basis: 50%;
+        margin: 0 5px;
+    }
+
+    h3 {
+        border-bottom: 3px solid hsla(0, 0%, 100%, 0.1);
+        color: var(--main-color);
+        font-size: 33px;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+
+        span {
+            position: relative;
+            color: #fff;
+
+            &::after {
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+                background-color: var(--main-color);
+                content: '';
+                height: 3px;
+                width: 50%;
+            }
+        }
+    }
+
+    .gallery {
+    }
+
+    .close-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        background-color: hsla(0, 0%, 100%, 0.1);
+        border-radius: 100%;
+        box-shadow: 0 0 7px #ffc107;
+        height: 46px;
+        position: absolute;
+        right: -15px;
+        top: -15px;
+        width: 46px;
+        color: #ffc107;
+        cursor: pointer;
+        z-index: 99;
+    }
+
+    @keyframes floatDown {
+        0% {
+            top: 0;
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.show-modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: gray, $alpha: 0.5);
+}

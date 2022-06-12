@@ -4,7 +4,7 @@
     margin-bottom: 50px;
     border-radius: var(--contain-radius);
     padding: 30px;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    background: var(--color_theme);
     transition: all 0.5s;
 }
 

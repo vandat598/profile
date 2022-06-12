@@ -23,12 +23,32 @@
         #ffc75f,
         #f9f871
     );
+
+    --color_theme: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
 }
 
 body {
-    background: linear-gradient(45deg, #6f86d6, #89f7fe);
+    background: linear-gradient(45deg, #63a089, #458791);
     // font-family: 'Nunito', Arial, Helvetica, sans-serif;
     font-size: 16px;
     background-repeat: no-repeat;
     -webkit-tap-highlight-color: transparent;
+    overflow: auto;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+::-webkit-scrollbar-track {
+    background: linear-gradient(45deg, #63a089, #458791);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(206, 243, 39);
+    background-clip: content-box;
+    border-radius: 20px;
 }
