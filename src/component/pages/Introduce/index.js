@@ -23,8 +23,8 @@ function Introduce() {
                 <p>
                     Lúc còn là sinh viên, những môn về lập trình hệ thống tự động hoá, đã truyền cảm hứng cho tôi về
                     ngành lập trình. Sau 2 năm ra trường, đi làm tại các công trình, phân xưởng. Tôi quyết định thử học
-                    lập trình web và vô tính tìm được trang https://fullstack.edu.vn/. Tôi cảm thấy mình thật sự muốn
-                    theo đuổi Lập trình.
+                    lập trình web và vô tính tìm được trang https://fullstack.edu.vn/. Ngoài ra, tôi cũng đã tìm và tự
+                    học ở một số nguồn khác.
                 </p>
                 <p style={{ color: '#9D0000' }}>
                     Tôi mong muốn theo làm hướng <strong>Front-end Web Developer</strong>, và ứng tuyển vào vị trí{' '}

@@ -27,7 +27,21 @@ function Education() {
                 <div className={cx('container')}>
                     <h4 className={cx('title')}>Học tại F8</h4>
                     <div className={cx('note')}>01/2022</div>
-                    <p>HTML,CSS,ReactJS</p>
+                    <p>
+                        Đã học qua các Khoá học - HTML, CSS, Responsive, JavaScript cơ bản, JavaScript nâng cao,
+                        ReactJS, WSL Ubuntu
+                    </p>
+                    <p>Packages - classnames, clsx, Webpack, customize-cra, tippyjs, axios</p>
+                </div>
+                <div className={cx('container')}>
+                    <h4 className={cx('title')}>Nguồn khác</h4>
+                    <div className={cx('note')}>2022</div>
+                    <p>CodersX channel - Git, bootstrap, reactstrap</p>
+                    <p>Evondev channel - HTML, CSS</p>
+                    <p>Easy Frontend channel - ReactJS</p>
+                    <p>Kevin Powell channel - HTML, CSS</p>
+                    <p>Creative Ambition channel - HTML, CSS, JavaScript</p>
+                    <p>W3school, Mozilla</p>
                 </div>
             </div>
             <div className={cx('sub-item')}>

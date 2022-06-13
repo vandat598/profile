@@ -132,6 +132,9 @@
 
 @media (max-width: 739px) {
     .modal {
+        top: 5%;
+        height: 80vh;
+
         .modal_content {
             flex-direction: column;
         }
