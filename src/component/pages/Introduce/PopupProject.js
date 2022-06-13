@@ -6,22 +6,21 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
 import styles from './Popup.module.scss';
-import theBand from '~/assets/images/theBand.png';
-import musicPlayer from '~/assets/images/Music_player.png';
-import shopee from '~/assets/images/shopee.png';
 
 // import required modules
 
 const cx = classNames.bind(styles);
 
 function PopupProject({ value }) {
-    const { open, setOpen, bodyScroll } = value;
+    const { bodyScroll, otherProject, setModalID, modalID } = value;
+
+    const test = modalID === otherProject.id;
 
     return (
         <div
-            className={cx('wrapper_modal', { 'show-modal': open })}
+            className={cx('wrapper_modal', { 'show-modal': test })}
             onClick={() => {
-                setOpen(false);
+                setModalID(false);
                 bodyScroll.classList.remove('no-scroll');
             }}
         >
@@ -35,99 +34,58 @@ function PopupProject({ value }) {
                     <div className={cx('modal_content')}>
                         <div className={cx('demo')}>
                             <h3>
-                                <span>demo</span>
+                                <span>
+                                    <strong>{otherProject.title}</strong>
+                                </span>
                             </h3>
                             <div className={cx('gallery')}>
                                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
-                                    <div className="carousel-indicators">
-                                        <button
-                                            type="button"
-                                            data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="0"
-                                            className="active"
-                                            aria-current="true"
-                                            aria-label="Slide 1"
-                                        ></button>
-                                        <button
-                                            type="button"
-                                            data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="1"
-                                            aria-label="Slide 2"
-                                        ></button>
-                                        <button
-                                            type="button"
-                                            data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="2"
-                                            aria-label="Slide 3"
-                                        ></button>
-                                    </div>
                                     <div
                                         className="carousel-inner"
                                         style={{ borderRadius: '15px', boxShadow: '0 0 7px #ffc107' }}
                                     >
                                         <div className="carousel-item active">
-                                            <img src={theBand} className="d-block w-100" alt="..." />
+                                            <img src={otherProject.image} className="d-block w-100" alt="..." />
                                         </div>
                                         <div className="carousel-item">
-                                            <img src={musicPlayer} className="d-block w-100" alt="..." />
+                                            <img src={otherProject.image} className="d-block w-100" alt="..." />
                                         </div>
                                         <div className="carousel-item">
-                                            <img src={shopee} className="d-block w-100" alt="..." />
+                                            <img src={otherProject.image} className="d-block w-100" alt="..." />
                                         </div>
                                     </div>
-                                    <button
-                                        className="carousel-control-prev"
-                                        type="button"
-                                        data-bs-target="#carouselExampleIndicators"
-                                        data-bs-slide="prev"
-                                    >
-                                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span className="visually-hidden">Previous</span>
-                                    </button>
-                                    <button
-                                        className="carousel-control-next"
-                                        type="button"
-                                        data-bs-target="#carouselExampleIndicators"
-                                        data-bs-slide="next"
-                                    >
-                                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span className="visually-hidden">Next</span>
-                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div className={cx('details')}>
                             <h3>
-                                <span>details</span>
+                                <strong>
+                                    <span>Details</span>
+                                </strong>
                             </h3>
-                            <div className={cx('details_content')}>
-                                <ul>
-                                    <li>
-                                        <span> HTML, CSS</span>
-                                    </li>
-                                    <li>
-                                        Made by:
-                                        <span> HTML, CSS</span>
-                                    </li>
-                                    <li>
-                                        Sử dụng:
-                                        <span> HTML, CSS</span>
-                                    </li>
-                                </ul>
+                            <ul className={cx('details_content')}>
+                                <li>
+                                    <span>{otherProject.desc}</span>
+                                </li>
+                                <li>
+                                    Made by - <span>{otherProject.madeBy}</span>
+                                </li>
+                                <li>
+                                    Sử dụng - <span> HTML, CSS</span>
+                                </li>
+                            </ul>
+                            <div className={cx('access-btn')}>
+                                <a href={otherProject.url}>
+                                    <button className={cx('access')}>
+                                        <strong>Truy Cập</strong>
+                                    </button>
+                                </a>
                             </div>
-                            <button
-                                className={cx('access')}
-                                onClick={() => {
-                                    console.log('truy cap');
-                                }}
-                            >
-                                Truy cập
-                            </button>
                         </div>
                         <button
                             className={cx('close-btn')}
                             onClick={() => {
-                                setOpen(false);
+                                setModalID(0);
                                 bodyScroll.classList.remove('no-scroll');
                             }}
                         >
