@@ -38,8 +38,8 @@ function Introduce() {
                 <div className={cx('row')}>
                     {otherProjects.map((otherProject, index) => {
                         return (
-                            <React.Fragment>
-                                <div key={index} className={cx('col', 'l-6')}>
+                            <React.Fragment key={index}>
+                                <div className={cx('col', 'l-6')}>
                                     <div className={cx('otherProject')}>
                                         <div
                                             className={cx('imageProject')}
