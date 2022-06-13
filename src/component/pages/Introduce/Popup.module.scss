@@ -129,3 +129,20 @@
     left: 0;
     background-color: rgba($color: gray, $alpha: 0.5);
 }
+
+@media (max-width: 739px) {
+    .modal {
+        .modal_content {
+            flex-direction: column;
+        }
+
+        .details {
+            margin-top: 30px;
+        }
+
+        .access-btn {
+            top: 15px;
+            left: 0px;
+        }
+    }
+}
