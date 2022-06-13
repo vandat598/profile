@@ -147,5 +147,16 @@
             top: 15px;
             left: 0px;
         }
+
+        @keyframes floatDown {
+            0% {
+                top: 0;
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+                top: 6%;
+            }
+        }
     }
 }
