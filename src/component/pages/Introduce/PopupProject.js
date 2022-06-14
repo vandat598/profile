@@ -70,9 +70,6 @@ function PopupProject({ value }) {
                                 <li>
                                     Made by - <span>{otherProject.madeBy}</span>
                                 </li>
-                                <li>
-                                    Sử dụng - <span> HTML, CSS</span>
-                                </li>
                             </ul>
                             <div className={cx('access-btn')}>
                                 <a href={otherProject.url}>

@@ -132,11 +132,15 @@
 
 @media (max-width: 739px) {
     .modal {
-        top: 5%;
-        height: 80vh;
+        top: 15%;
+        height: 65vh;
 
         .modal_content {
             flex-direction: column;
+
+            .demo {
+                display: none;
+            }
         }
 
         .details {
@@ -146,6 +150,7 @@
         .access-btn {
             top: 15px;
             left: 0px;
+            // bottom: 0;
         }
 
         @keyframes floatDown {
@@ -155,7 +160,7 @@
             }
             100% {
                 opacity: 1;
-                top: 6%;
+                top: 16%;
             }
         }
     }
