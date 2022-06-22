@@ -65,10 +65,22 @@ function PopupProject({ value }) {
                             </h3>
                             <ul className={cx('details_content')}>
                                 <li>
-                                    <span>{otherProject.desc}</span>
+                                    <strong>
+                                        <em>Description</em>
+                                    </strong>{' '}
+                                    - <span>{otherProject.desc}</span>
                                 </li>
                                 <li>
-                                    Made by - <span>{otherProject.madeBy}</span>
+                                    <strong>
+                                        <em>Made by</em>
+                                    </strong>{' '}
+                                    - <span>{otherProject.madeBy}</span>
+                                </li>
+                                <li>
+                                    <strong>
+                                        <em>Responsive</em>
+                                    </strong>{' '}
+                                    - <span>{otherProject.respon}</span>
                                 </li>
                             </ul>
                             <div className={cx('access-btn')}>

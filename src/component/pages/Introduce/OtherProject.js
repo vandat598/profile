@@ -10,8 +10,9 @@ export const otherProjects = [
         image: chatApp,
         alt: 'Chat app',
         title: 'Chat App',
-        madeBy: 'HTML, SCSS, ReactJS-18, antd, firebase-9',
-        desc: '3',
+        madeBy: 'HTML, SCSS, ReactJS-18, antd, firebase-9, date-fns',
+        respon: 'Chỉ mới responsive giao diện cho mobile, về cửa sổ tin nhắn chưa được responsive',
+        desc: 'Trang web làm về Chat App, sử dụng real-time databese của Firebase để lưu trữ tin nhắn và tài khoản người dùng. Có thể đăng nhập bằng Google hoặc Facebook.',
     },
     {
         id: 2,
@@ -20,6 +21,7 @@ export const otherProjects = [
         alt: 'Music Player',
         title: 'Music Player',
         madeBy: 'HTML, CSS, JavaScript',
+        respon: 'Đã được responsive cho giao diện mobile',
         desc: 'Music Player là trang web được dựng bằng HTML, CSS thuần và được xử logic bằng JavaScript',
     },
     {
@@ -28,8 +30,9 @@ export const otherProjects = [
         image: myProfile,
         alt: 'My Profile',
         title: 'My Profile',
-        madeBy: 'HTML, CSS, ReactJS-18, (Responsived)',
-        desc: 'The Band trang web cơ bản, clone theo trang The band của W3school, Sử dụng hoàn toàn HTML, CSS thuần và modal được xử lý bằng JavaScript.',
+        madeBy: 'HTML, SCSS, ReactJS-18, custom-grid.css, classnames, Bootstrap.',
+        respon: 'Đã được responsive cho giao diện mobile',
+        desc: 'Trang web được dựng layout bằng file custom-grid.css, sử dụng Bootstrap cho phần Modal.',
     },
     {
         id: 4,
@@ -38,6 +41,7 @@ export const otherProjects = [
         alt: 'The Band',
         title: 'The Band',
         madeBy: 'HTML, CSS, JavaScript, (Trang web đã được Responsive)',
+        respon: 'Trang web đã được responsive',
         desc: 'The Band trang web cơ bản, clone theo trang The band của W3school, Sử dụng hoàn toàn HTML, CSS thuần và modal được xử lý bằng JavaScript.',
     },
 ];
