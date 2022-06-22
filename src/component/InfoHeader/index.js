@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faYoutube, faGithub, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import styles from './InfoHeader.module.scss';
-import avatar from '../../assets/images/tvd_avatar.jpg';
+import avatar from '../../assets/images/tvd_avatar.bmp';
+
 const cx = classNames.bind(styles);
 
 function InfoHeader() {

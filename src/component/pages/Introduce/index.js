@@ -21,10 +21,14 @@ function Introduce() {
                     vào cuối năm 2020.
                 </p>
                 <p>
-                    Lúc còn là sinh viên, những môn về lập trình hệ thống tự động hoá, đã truyền cảm hứng cho tôi về
-                    ngành lập trình. Sau 2 năm ra trường, đi làm tại các công trình, phân xưởng. Tôi quyết định thử học
-                    lập trình web và vô tính tìm được trang https://fullstack.edu.vn/. Ngoài ra, tôi cũng đã tìm và tự
-                    học ở một số nguồn khác.
+                    Khi còn nhỏ, tôi được bố mẹ tặng cho chiếc Máy tính, tôi bắt đầu có hứng thú về các công nghệ, kỹ
+                    thuật máy tính. Tôi tìm hiểu nhiều hơn và cũng có một ít kiến thức về máy tính. Khi lên Đại học, vì
+                    hoàn cảnh, tôi đã đăng ký vào chuyên ngành mà mình không ưu thích. Trong thời gian còn đi học, tôi
+                    cũng có đi cài win dạo để kiếm thêm. Sau khi ra trường, đi làm tại các công trình, phân xưởng. Chiếc
+                    Laptop của tôi dần bám bụi, tôi cũng dần chán nản công việc hiện tại. Tôi quyết định tìm hiểu về các
+                    ngành nghề bên Công nghệ thông tin, và biết điến lập trình web. Tôi bắt đầu thử học lập trình web và
+                    vô tình tìm được trang https://fullstack.edu.vn/. Ngoài ra, tôi cũng đã tìm và tự học ở một số nguồn
+                    khác như W3school, Molliza, các kênh Youtube về lập trình.
                 </p>
                 <p style={{ color: '#9D0000' }}>
                     Tôi mong muốn theo làm hướng <strong>Front-end Web Developer</strong>, và ứng tuyển vào vị trí{' '}

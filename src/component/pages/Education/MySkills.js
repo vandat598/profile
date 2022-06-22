@@ -6,6 +6,7 @@ import react from '~/assets/images/LogoCourses/react.png';
 import Bootstrap from '~/assets/images/LogoCourses/Bootstrap.png';
 import git from '~/assets/images/LogoCourses/git.png';
 import github from '~/assets/images/LogoCourses/github.png';
+import antd from '~/assets/images/LogoCourses/antd.png';
 
 export const mySkills = [
     {
@@ -39,22 +40,23 @@ export const mySkills = [
     {
         logo: react,
         title: 'ReactJS',
-        note: 'React (JavaScript library)',
+        note: 'React (Library)',
         description:
             'ReactJS là một thư viện JavaScript front-end mã nguồn mở và miễn phí, xây dựng giao diện người dùng dựa trên các thành phần UI. Nó được phát triển bởi Meta (trước đây là Facebook) ra mắt vào năm 2013.',
     },
     {
         logo: Bootstrap,
         title: 'Bootstrap',
-        note: 'Bootstrap (front-end framework)',
+        note: 'Bootstrap (framework)',
         description:
             'Bootstrap là một framework CSS mã nguồn mở và miễn phí hướng đến việc phát triển web responsive. Nó chứa các mẫu thiết kế dựa trên HTML, CSS và (tùy chọn) JavaScript cho kiểu chữ, biểu mẫu, nút, điều hướng và các thành phần giao diện khác.',
     },
     {
-        logo: Bootstrap,
-        title: 'Ant-design',
-        note: 'Ant-design (JavaScript Library)',
-        description: '...',
+        logo: antd,
+        title: 'Ant-Design',
+        note: 'Ant-Design (Library)',
+        description:
+            'Ant-Design là một thư viện về UI, Với Ant-Design bạn có thể tạo nhanh cho mình một trang "landing page" dựa theo "template" được cung cấp sẵn. Ant-Design cũng có các thư viện giành riêng cho các ngôn ngữ như "React", "Vue" hay "Angular".',
     },
 
     {
