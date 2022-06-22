@@ -51,6 +51,13 @@ export const mySkills = [
             'Bootstrap là một framework CSS mã nguồn mở và miễn phí hướng đến việc phát triển web responsive. Nó chứa các mẫu thiết kế dựa trên HTML, CSS và (tùy chọn) JavaScript cho kiểu chữ, biểu mẫu, nút, điều hướng và các thành phần giao diện khác.',
     },
     {
+        logo: Bootstrap,
+        title: 'Ant-design',
+        note: 'Ant-design (JavaScript Library)',
+        description: '...',
+    },
+
+    {
         logo: git,
         title: 'Git',
         note: 'Git (ra đời vào năm 2005)',
