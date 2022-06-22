@@ -36,7 +36,7 @@ function InfoHeader() {
                                 <div className={cx('icon_popup')}>Tiktok</div>
                             </div>
                         </a>
-                        <a href="https://github.com/vandat598?tab=repositories" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/vandat598" target="_blank" rel="noreferrer">
                             <div className={cx('SN-icon')} style={{ '--bgColor': '#903b98' }}>
                                 <FontAwesomeIcon icon={faGithub} />
                                 <div className={cx('icon_popup')}>Github</div>
