@@ -7,6 +7,7 @@ import Bootstrap from '~/assets/images/LogoCourses/Bootstrap.png';
 import git from '~/assets/images/LogoCourses/git.png';
 import github from '~/assets/images/LogoCourses/github.png';
 import antd from '~/assets/images/LogoCourses/antd.png';
+import route from '~/assets/images/LogoCourses/route.png';
 
 export const mySkills = [
     {
@@ -40,9 +41,16 @@ export const mySkills = [
     {
         logo: react,
         title: 'ReactJS',
-        note: 'React (Library)',
+        note: 'React@18 (Library)',
         description:
             'ReactJS là một thư viện JavaScript front-end mã nguồn mở và miễn phí, xây dựng giao diện người dùng dựa trên các thành phần UI. Nó được phát triển bởi Meta (trước đây là Facebook) ra mắt vào năm 2013.',
+    },
+    {
+        logo: route,
+        title: 'React-router-dom',
+        note: 'React@6 (Library)',
+        description:
+            'React-Router là một thư viện định tuyến tiêu chuẩn trong React. Nó giữ cho giao diện của ứng dụng đồng bộ với URL trên trình duyệt. React-Router cho phép định tuyến "luồng dữ liệu" trong ứng dụng của bạn một cách rõ ràng. Nó tương đương với sự khẳng nếu bạn có URL này, nó sẽ tương đương với Route này, và giao diện tương ứng.',
     },
     {
         logo: Bootstrap,
