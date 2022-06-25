@@ -10,6 +10,18 @@
 
 @media (max-width: 739px) {
     .content-body {
-        margin-bottom: calc(10vh + 10px);
+        margin-bottom: 15vh;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .content-body {
+        margin-bottom: 12vh;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .content-body {
+        margin-bottom: 15vh;
     }
 }

@@ -96,11 +96,57 @@
             position: fixed;
             flex-direction: row;
             z-index: 999;
-            height: 10vh;
+            height: 13vh;
             width: 100%;
-            top: 90vh;
+            top: 87vh;
             bottom: 0;
             margin-bottom: 0;
+
+            .nav-item {
+                position: relative;
+                width: 100px;
+                padding: 0;
+                margin: 0;
+            }
+        }
+        .fixed {
+            animation: none;
+        }
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .sidebar {
+        .nav {
+            position: fixed;
+            flex-direction: row;
+            z-index: 999;
+            height: 10vh;
+            width: 79vw;
+            top: 89vh;
+
+            .nav-item {
+                position: relative;
+                width: 100px;
+                padding: 0;
+                margin: 0;
+            }
+        }
+        .fixed {
+            animation: none;
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .sidebar {
+        .nav {
+            position: fixed;
+            flex-direction: row;
+            z-index: 999;
+            height: 13vh;
+            width: 62rem;
+            top: 93vh;
 
             .nav-item {
                 position: relative;

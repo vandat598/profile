@@ -8,6 +8,7 @@ import git from '~/assets/images/LogoCourses/git.png';
 import github from '~/assets/images/LogoCourses/github.png';
 import antd from '~/assets/images/LogoCourses/antd.png';
 import route from '~/assets/images/LogoCourses/route.png';
+import responsive from '~/assets/images/LogoCourses/responsive.png';
 
 export const mySkills = [
     {
@@ -30,6 +31,13 @@ export const mySkills = [
         note: 'Syntactically Awesome StyleSheets',
         description:
             'SCSS là một CSS Preprocessor giúp bạn viết CSS nhanh hơn và có cấu trúc rõ ràng hơn. Với SASS, bạn có thể viết CSS theo thứ tự rõ ràng, quản lý các biến đã được định nghĩa sẵn, các class dùng chung hay có thể tự động nén tập tin CSS lại để bạn tiết kiệm dung lượng.',
+    },
+    {
+        logo: responsive,
+        title: 'Responsive',
+        note: 'Thiết kế web đáp ứng',
+        description:
+            'Responsive web design là kiểu mẫu phong cách thiết kế với giao diện, bố cục website thể hiện đẹp, mang tính mỹ thuật với độ hiển thị nội dung co giãn phù hợp trên tất cả các màn hình thiết bị như desktop, laptop, tablet, smartphone, với mọi độ phân giải màn hình, duy trì sự hiển thị nội dung nhất quán thẩm mỹ trên mọi chế độ phân giải.',
     },
     {
         logo: JS,
